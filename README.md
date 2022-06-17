@@ -8,6 +8,7 @@ Templates of GitHub Workflows for different programming languages.
 | [Python](python.yml) |
 | [Golang](golang.yml) |
 | [Node / React](node.yml) |
+| [CMake / C++](cmake.yml) |
 
 ### Base layout
 

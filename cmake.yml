@@ -1,0 +1,36 @@
+# author(s) of this workflow: sindre0830
+name: Name of workflow
+# when to run the workflow
+on:
+  push:
+    - 'path/to/folder/**'
+  pull_request:
+# instructions the workflow will perform
+jobs:
+  build:
+    # environment to run on
+    runs-on: ubuntu-latest
+    # steps to perform
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up language
+      working-directory: ./path/to/folder
+      run: |
+        sudo apt-get update
+        sudo apt-get install gcc g++ cmake
+        mkdir Build
+        sudo apt-get install python3-pip
+        pip3 install cpplint
+
+    - name: Install dependencies
+      working-directory: ./path/to/folder
+      run: cmake ./..
+
+    - name: Build program
+      working-directory: ./path/to/folder
+      run: cmake --build .
+
+    - name: Syntax checker
+      working-directory: ./path/to/folder
+      run: cpplint --root=. --linelength=150 --filter=-build/include_subdir --recursive --exclude=External/* --exclude=Build/* *
