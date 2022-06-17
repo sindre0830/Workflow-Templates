@@ -1,4 +1,4 @@
-# author(s) of this workflow: sindre0830
+# source: https://github.com/sindre0830/Workflow-Templates
 name: Name of workflow
 # when to run the workflow
 on:
