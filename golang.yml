@@ -1,0 +1,28 @@
+# author(s) of this workflow: sindre0830
+name: Name of workflow
+# when to run the workflow
+on:
+  push:
+    - 'path/to/folder/**'
+  pull_request:
+# instructions the workflow will perform
+jobs:
+  build:
+    # environment to run on
+    runs-on: ubuntu-latest
+    # steps to perform
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Golang
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+
+    - name: Build program
+      working-directory: ./path/to/folder
+      run: go build -v ./main.go
+
+    - name: Run tests
+      working-directory: ./path/to/folder
+      run: go test -v ./...

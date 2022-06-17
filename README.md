@@ -6,6 +6,7 @@ Templates of GitHub Workflows for different programming languages.
 | Language |
 | -------- |
 | [Python](python.yml) |
+| [Golang](golang.yml) |
 
 ### Base layout
 
