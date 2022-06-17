@@ -5,10 +5,11 @@ Templates of GitHub Workflows for different programming languages.
 
 | Language |
 | -------- |
-| [Python](python.yml) |
-| [Golang](golang.yml) |
-| [Node / React](node.yml) |
-| [CMake / C++](cmake.yml) |
+| [Python](.github/workflows/python.yml) |
+| [Golang](.github/workflows/golang.yml) |
+| [Node / React](.github/workflows/node.yml) |
+| [CMake / C++](.github/workflows/cmake.yml) |
+| [Rust](.github/workflows/rust.yml) |
 
 ### Base layout
 
