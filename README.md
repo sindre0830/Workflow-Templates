@@ -7,11 +7,11 @@ Want to **contribute**? Open up a pull request! My goal is to have as many langu
 
 | Language |
 | -------- |
-| [Python](.github/workflows/python.yml) |
-| [Golang](.github/workflows/golang.yml) |
-| [Node / React](.github/workflows/node.yml) |
-| [CMake / C++](.github/workflows/cmake.yml) |
-| [Rust](.github/workflows/rust.yml) |
+| [Python](workflows/python.yml) |
+| [Golang](workflows/golang.yml) |
+| [Node / React](workflows/node.yml) |
+| [CMake / C++](workflows/cmake.yml) |
+| [Rust](workflows/rust.yml) |
 
 ### Base layout
 
