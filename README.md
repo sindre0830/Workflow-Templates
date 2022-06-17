@@ -1,6 +1,12 @@
 # Workflow Templates
 Templates of GitHub Workflows for different programming languages.
 
+### List of available templates
+
+| Language |
+| -------- |
+| [Python](python.yml) |
+
 ### Base layout
 
 Base workflow file for every programming language:
