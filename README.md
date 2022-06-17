@@ -1,6 +1,8 @@
 # Workflow Templates
 Templates of GitHub Workflows for different programming languages.
 
+Want to **contribute**? Open up a pull request! My goal is to have as many languages here as possible so any contribution is welcome.
+
 ### List of available templates
 
 | Language |
