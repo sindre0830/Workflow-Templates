@@ -1,5 +1,5 @@
 # Workflow Templates
-Templates of GitHub Workflows for different programming languages.
+Templates of GitHub Workflows for different programming languages. Place the workflow file you want to use in ```.github/workflows/```.
 
 Want to **contribute**? Open up a pull request! My goal is to have as many languages here as possible so any contribution is welcome.
 
