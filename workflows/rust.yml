@@ -3,6 +3,7 @@ name: Name of workflow
 # when to run the workflow
 on:
   push:
+  - '.github/workflows/rust.yml'
   - 'path/to/folder/**'
   pull_request:
 # instructions the workflow will perform
