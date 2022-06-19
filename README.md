@@ -54,7 +54,7 @@ jobs:
 
 Under the section that decides when to run the workflow you can decide on specific paths. Below you can see an example where the workflow will only run when changes is pushed to the ```path/to/file/main.py``` file or when anything changes in the ```path/to/folder/``` directory. This limits the amount of time the workflow is run and helps with reducing the time it takes to get the results. It is recommended to add the workflow file to this list as it triggers the workflow to run on any changes you apply to it, testing the workflow instantly.
 
-Pull requests aren't set to any specific path since its recommended to run every workflow before merging the branch with main. This reduces the likelyhood of mistakes being pushed to the main branch.
+Pull requests aren't set to any specific path since it's recommended to run every workflow before merging the branch with main. This reduces the likelihood of mistakes being pushed to the main branch.
 
 ```yml
 on:
