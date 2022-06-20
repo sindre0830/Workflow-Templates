@@ -1,0 +1,33 @@
+# source: https://github.com/sindre0830/Workflow-Templates
+name: Name of workflow
+# when to run the workflow
+on:
+  push:
+  - '.github/workflows/java-gradle.yml'
+  - 'path/to/folder/**'
+  pull_request:
+# instructions the workflow will perform
+jobs:
+  build:
+    # environment to run on
+    runs-on: ubuntu-latest
+    # steps to perform
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: current
+
+      - name: Build program
+        run: gradle build
+
+      - name: Run tests
+        run: gradle test
