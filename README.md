@@ -5,14 +5,14 @@ Want to **contribute**? Open up a pull request or an issue! My goal is to have a
 
 ### List of available templates
 
-| Language |
-| -------- |
-| [Python](workflows/python.yml) |
-| [Golang](workflows/golang.yml) |
-| [Node / React](workflows/node.yml) |
-| [CMake / C++](workflows/cmake.yml) |
-| [Rust](workflows/rust.yml) |
-| [Gradle / Java](workflows/java-gradle.yml) |
+| Language | Author(s) |
+| -------- | --------- |
+| [Python](workflows/python.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Golang](workflows/golang.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Node / React](workflows/node.yml) | [sindre0830](https://github.com/sindre0830) |
+| [CMake / C++](workflows/cmake.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Rust](workflows/rust.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Gradle / Java](workflows/java-gradle.yml) | [MikAoJK](https://github.com/MikAoJK) |
 
 ### Base layout
 
