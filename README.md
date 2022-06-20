@@ -12,6 +12,7 @@ Want to **contribute**? Open up a pull request or an issue! My goal is to have a
 | [Node / React](workflows/node.yml) |
 | [CMake / C++](workflows/cmake.yml) |
 | [Rust](workflows/rust.yml) |
+| [Gradle / Java](workflows/java-gradle.yml) |
 
 ### Base layout
 
