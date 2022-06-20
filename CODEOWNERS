@@ -1,0 +1,6 @@
+/workflows/cmake.yml        @sindre0830
+/workflows/golang.yml       @sindre0830
+/workflows/java-gradle.yml  @MikAoJk
+/workflows/node.yml         @sindre0830
+/workflows/python.yml       @sindre0830
+/workflows/rust.yml         @sindre0830
