@@ -6,6 +6,7 @@ on:
   - '.github/workflows/rust.yml'
   - 'path/to/folder/**'
   pull_request:
+  workflow_dispatch:
 # instructions the workflow will perform
 jobs:
   build:
