@@ -26,26 +26,26 @@ jobs:
         components: rustfmt, clippy
 
     - name: Build program
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       uses: actions-rs/cargo@v1
       with:
         command: check
 
     - name: Run tests
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       uses: actions-rs/cargo@v1
       with:
         command: test
 
     - name: Syntax checker (fmt)
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       uses: actions-rs/cargo@v1
       with:
         command: fmt
         args: --all -- --check
 
     - name: Syntax checker (clippy)
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       uses: actions-rs/cargo@v1
       with:
         command: clippy
