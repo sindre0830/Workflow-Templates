@@ -5,7 +5,7 @@ on:
   push:
     paths:
     - '.github/workflows/node.yml'
-    - 'path/to/folder/**'
+    - 'examples/node/**'
   pull_request:
   workflow_dispatch:
 # instructions the workflow will perform
@@ -24,13 +24,13 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      working-directory: path/to/folder
+      working-directory: examples/node
       run: npm install
 
     - name: Build program
-      working-directory: path/to/folder
+      working-directory: examples/node
       run: npm run build --if-present
 
     - name: Run tests
-      working-directory: path/to/folder
-      run: npm tests
+      working-directory: examples/node
+      run: npm test
