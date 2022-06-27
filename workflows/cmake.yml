@@ -18,21 +18,23 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up language
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       run: |
         sudo apt-get update
-        sudo apt-get install gcc g++ cmake python3-pip
-        pip3 install cpplint
-        mkdir Build
+        sudo apt-get install gcc g++ cmake
+        mkdir build
 
     - name: Install dependencies
-      working-directory: ./path/to/folder
-      run: cmake ./..
+      working-directory: path/to/folder/build
+      run: cmake ..
 
     - name: Build program
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder/build
       run: cmake --build .
 
     - name: Syntax checker
-      working-directory: ./path/to/folder
-      run: cpplint --root=. --linelength=150 --filter=-build/include_subdir --recursive --exclude=External/* --exclude=Build/* *
+      working-directory: path/to/folder
+      run: |
+        sudo apt-get install python3-pip
+        pip3 install cpplint
+        cpplint --root=. --linelength=150 --filter=-build/include_subdir --recursive --exclude=external/* --exclude=build/* *
