@@ -5,7 +5,7 @@ on:
   push:
     paths:
     - '.github/workflows/cmake.yml'
-    - 'path/to/folder/**'
+    - 'examples/cpp/**'
   pull_request:
   workflow_dispatch:
 # instructions the workflow will perform
@@ -18,22 +18,22 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up language
-      working-directory: path/to/folder
+      working-directory: examples/cpp
       run: |
         sudo apt-get update
         sudo apt-get install gcc g++ cmake
         mkdir build
 
     - name: Install dependencies
-      working-directory: path/to/folder/build
+      working-directory: examples/cpp/build
       run: cmake ..
 
     - name: Build program
-      working-directory: path/to/folder/build
+      working-directory: examples/cpp/build
       run: cmake --build .
 
     - name: Syntax checker
-      working-directory: path/to/folder
+      working-directory: examples/cpp
       run: |
         sudo apt-get install python3-pip
         pip3 install cpplint
