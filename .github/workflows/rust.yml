@@ -29,24 +29,22 @@ jobs:
       uses: actions-rs/cargo@v1
       with:
         command: check
-      working-directory: examples/rust
+        args: --manifest-path examples/rust/Cargo.toml
 
     - name: Run tests
       uses: actions-rs/cargo@v1
       with:
         command: test
-      working-directory: examples/rust
+        args: --manifest-path examples/rust/Cargo.toml
 
     - name: Syntax checker (fmt)
       uses: actions-rs/cargo@v1
       with:
         command: fmt
-        args: --all -- --check
-      working-directory: examples/rust
+        args: --all -- --check --manifest-path examples/rust/Cargo.toml
 
     - name: Syntax checker (clippy)
       uses: actions-rs/cargo@v1
       with:
         command: clippy
-        args: -- -D warnings
-      working-directory: examples/rust
+        args: -- -D warnings --manifest-path examples/rust/Cargo.toml
