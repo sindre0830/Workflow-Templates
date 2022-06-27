@@ -1,10 +1,11 @@
 # source: https://github.com/sindre0830/Workflow-Templatess
-name: Name of workflow
+name: Golang workflow
 # when to run the workflow
 on:
   push:
-  - '.github/workflows/golang.yml'
-  - 'path/to/folder/**'
+    paths:
+    - '.github/workflows/golang.yml'
+    - 'path/to/folder/**'
   pull_request:
   workflow_dispatch:
 # instructions the workflow will perform
