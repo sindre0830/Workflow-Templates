@@ -15,22 +15,24 @@ jobs:
     runs-on: ubuntu-latest
     # steps to perform
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: temurin
-          java-version: 17
-          cache: 'gradle'
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 17
+        cache: 'gradle'
 
-      - name: Set up gradle
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: current
+    - name: Set up Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: current
 
-      - name: Build program
-        run: gradle build --no-daemon
+    - name: Build program
+      working-directory: path/to/folder
+      run: gradle build --no-daemon
 
-      - name: Run tests
-        run: gradle test
+    - name: Run tests
+      working-directory: path/to/folder
+      run: gradle test
