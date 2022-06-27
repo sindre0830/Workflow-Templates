@@ -4,7 +4,7 @@ name: Java workflow
 on:
   push:
     paths:
-    - '.github/workflows/java-gradle.yml'
+    - '.github/workflows/java.yml'
     - 'examples/java/**'
   pull_request:
   workflow_dispatch:
