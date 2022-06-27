@@ -1,10 +1,11 @@
 # source: https://github.com/sindre0830/Workflow-Templates
-name: Name of workflow
+name: Python workflow
 # when to run the workflow
 on:
   push:
-  - '.github/workflows/python.yml'
-  - 'path/to/folder/**'
+    paths:
+    - '.github/workflows/python.yml'
+    - 'path/to/folder/**'
   pull_request:
   workflow_dispatch:
 # instructions the workflow will perform
@@ -22,17 +23,17 @@ jobs:
         python-version: '3.9.10'
 
     - name: Install dependencies
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip freeze > requirements.txt
-        pip install flake8
 
     - name: Build program
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       run: python -m py_compile ./main.py
 
     - name: Syntax checker
-      working-directory: ./path/to/folder
-      run: flake8 . --max-line-length 150
+      working-directory: path/to/folder
+      run: |
+        pip install flake8
+        flake8 . --max-line-length 150
