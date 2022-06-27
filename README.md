@@ -9,7 +9,7 @@ Want to **contribute**? Open up a pull request or an issue! My goal is to have a
 | -------- | --------- |
 | [Python](.github/workflows/python.yml) | [sindre0830](https://github.com/sindre0830) |
 | [Golang](.github/workflows/golang.yml) | [sindre0830](https://github.com/sindre0830) |
-| [Node / React](workflows/node.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Node / React](.github/workflows/node.yml) | [sindre0830](https://github.com/sindre0830) |
 | [CMake / C++](workflows/cmake.yml) | [sindre0830](https://github.com/sindre0830) |
 | [Rust](.github/workflows/rust.yml) | [sindre0830](https://github.com/sindre0830) |
 | [Gradle / Java](workflows/java-gradle.yml) | [MikAoJK](https://github.com/MikAoJK) |
