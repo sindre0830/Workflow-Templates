@@ -16,7 +16,7 @@ Want to **contribute**? Open up a pull request or an issue! My goal is to have a
 
 ### Base layout
 
-Base workflow file for every programming language:
+Base workflow layout for every programming language:
 ```yml
 name: Name of workflow
 # when to run the workflow
