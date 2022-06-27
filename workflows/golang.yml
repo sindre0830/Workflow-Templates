@@ -24,9 +24,9 @@ jobs:
         cache: true
 
     - name: Build program
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       run: go build -v ./main.go
 
     - name: Run tests
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       run: go test -v ./...
