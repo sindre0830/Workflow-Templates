@@ -38,19 +38,19 @@ jobs:
       ...
 
     - name: Install dependencies
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       ...
 
     - name: Build program
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       ...
 
     - name: Run tests
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       ...
 
     - name: Syntax checker
-      working-directory: ./path/to/folder
+      working-directory: path/to/folder
       ...
 ```
 
