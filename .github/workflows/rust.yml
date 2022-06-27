@@ -41,10 +41,10 @@ jobs:
       uses: actions-rs/cargo@v1
       with:
         command: fmt
-        args: --all -- --check --manifest-path examples/rust/Cargo.toml
+        args: --manifest-path examples/rust/Cargo.toml --all -- --check
 
     - name: Syntax checker (clippy)
       uses: actions-rs/cargo@v1
       with:
         command: clippy
-        args: -- -D warnings --manifest-path examples/rust/Cargo.toml
+        args: --manifest-path examples/rust/Cargo.toml -- -D warnings
