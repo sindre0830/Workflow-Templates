@@ -1,5 +1,5 @@
 # Workflow Templates
-Templates of GitHub Workflows for different programming languages. Place the workflow file you want to use in ```.github/workflows/```.
+Templates of GitHub Workflows for different programming languages. Place the workflow file you want to use in ```.github/workflows/```. In the ```examples/``` directory, there are coding examples that the workflows run on.
 
 Want to **contribute**? Open up a pull request or an issue! My goal is to have as many languages here as possible so any contribution is welcome.
 
@@ -7,7 +7,7 @@ Want to **contribute**? Open up a pull request or an issue! My goal is to have a
 
 | Language | Author(s) |
 | -------- | --------- |
-| [Python](workflows/python.yml) | [sindre0830](https://github.com/sindre0830) |
+| [Python](.github/workflows/python.yml) | [sindre0830](https://github.com/sindre0830) |
 | [Golang](workflows/golang.yml) | [sindre0830](https://github.com/sindre0830) |
 | [Node / React](workflows/node.yml) | [sindre0830](https://github.com/sindre0830) |
 | [CMake / C++](workflows/cmake.yml) | [sindre0830](https://github.com/sindre0830) |
