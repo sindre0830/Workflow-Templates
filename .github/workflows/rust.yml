@@ -26,27 +26,27 @@ jobs:
         components: rustfmt, clippy
 
     - name: Build program
-      working-directory: examples/rust
       uses: actions-rs/cargo@v1
       with:
         command: check
+      working-directory: examples/rust
 
     - name: Run tests
-      working-directory: examples/rust
       uses: actions-rs/cargo@v1
       with:
         command: test
+      working-directory: examples/rust
 
     - name: Syntax checker (fmt)
-      working-directory: examples/rust
       uses: actions-rs/cargo@v1
       with:
         command: fmt
         args: --all -- --check
+      working-directory: examples/rust
 
     - name: Syntax checker (clippy)
-      working-directory: examples/rust
       uses: actions-rs/cargo@v1
       with:
         command: clippy
         args: -- -D warnings
+      working-directory: examples/rust
