@@ -5,7 +5,7 @@ on:
   push:
     paths:
     - '.github/workflows/java-gradle.yml'
-    - 'path/to/folder/**'
+    - 'examples/java/**'
   pull_request:
   workflow_dispatch:
 # instructions the workflow will perform
@@ -30,9 +30,9 @@ jobs:
         gradle-version: current
 
     - name: Build program
-      working-directory: path/to/folder
+      working-directory: examples/java
       run: gradle build --no-daemon
 
     - name: Run tests
-      working-directory: path/to/folder
+      working-directory: examples/java
       run: gradle test
