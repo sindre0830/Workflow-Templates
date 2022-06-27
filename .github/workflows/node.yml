@@ -33,4 +33,4 @@ jobs:
 
     - name: Run tests
       working-directory: examples/node
-      run: npm tests
+      run: npm test
